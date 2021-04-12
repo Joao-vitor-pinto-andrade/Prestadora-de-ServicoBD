@@ -1,1 +1,12 @@
 # Prestadora-de-ServicoBD
+
+5.	Prestadora de Serviços
+	A firma "MJA Alocações" presta serviços de limpeza e deseja um sistema automatizado que cuide, principalmente, da alocação dos empregados aos pedidos de serviço feitos pelos clientes e de possíveis criticas no momento da alocação.
+
+O cliente telefona para a firma e faz um pedido de serviço. Neste momento a atendente verifica no cadastro se ele já é um cliente da firma; caso não seja, ela cadastra-o solicitando: CGC, Razão Social, Endereço e Telefone: se for pessoa jurídica, ou CPF, Nome, Endereço e Telefone, se for pessoa física. A firma atribui um código próprio para identificar qualquer um dos seus clientes.
+
+Estando o cliente devidamente cadastrado, a atendente abre um bloco de pedidos e preenche um "Pedido de Serviço", anotando: o nome do cliente, a data da abertura, a data para realização dos serviços, o local onde deverá ser realizado, e uma relação dos serviços que o cliente quer que seja executado naquele local, com a respectiva metragem quadrada de cada um.  A atendente consulta uma tabela de serviços ( código do serviço, descrição, valor por m2, duração por m2) e anota no pedido a duração e o valor, unitário e total dos serviços.  Após o preenchimento do pedido, a atendente informa ao cliente o número do seu pedido, o valor total a ser pago e a duração máxima para o término dos serviços, supondo que serão executados em seqüência.
+
+Todo empregado está habilitado a executar algum tipo de serviço de limpeza porém, apesar do treinamento fornecido, nem todos os empregados podem executar todos os tipos de serviço.  Caso a firma não possua nenhum empregado habilitado para a execução de um tipo de serviço que deverá ser prestado a um pedido, antes da realização é providenciado um treinamento e, posteriormente, um empregado é alocado ao pedido.  No momento de alocar cada empregado que irá atender ao pedido, é verificado se ele não está alocado em outro pedido no momento de sua realização, e se ele está habilitado para algum dos serviços exigidos no pedido (se não estiver habilitado, não pode ser alocado).
+
+A alocação dos empregados ao pedido é considerada completa se existir para cada tipo de serviço exigido no pedido, pelo menos um empregado habilitado alocado ao pedido.  "Qual empregado" vai executar "qual serviço do pedido", é decidido pela própria equipe no momento da realização, e não temos interesse em registrar.
